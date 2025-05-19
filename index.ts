@@ -1,7 +1,7 @@
 "use strict";
 import express, { json, Request, Response, NextFunction } from "express";
 import helmet                                   from "helmet";
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 app.set("trust proxy", 1);
 app.use(helmet());
