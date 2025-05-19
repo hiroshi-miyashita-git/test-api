@@ -60,7 +60,7 @@ app.route("/*")
   .post(postMethodHandler)
 ;
 
-// app.listen(PORT, () => {
-//    console.log(`Node.js express is started. [Exec env: ${process.env.ENV} Listening port: ${PORT}]`);
-// });
+app.listen(PORT, () => {
+   console.log(`Node.js express is started. [Exec env: ${process.env.ENV} Listening port: ${PORT}]`);
+});
 export default app;
